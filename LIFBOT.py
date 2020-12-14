@@ -11,7 +11,7 @@ intents = discord.Intents.default()
 intents.members = True
 intents.guilds = True
 
-description = "BOT feito exclusivo para a LIF, por: Wick19#5864. Uso somente da Staff. \nDigite `/help` para ver seus comandos!"
+description = "BOT feito exclusivo para a LIF, por: RickDB17. Uso somente da Staff. \nDigite `/help` para ver seus comandos!"
 
 client = commands.Bot(
     command_prefix=commands.when_mentioned_or('/'), 
@@ -22,7 +22,7 @@ client = commands.Bot(
     )
 
 invite = discord.Invite
-TOKEN = 'NzUxODAwNDIxMzA3MTIxNzg0.X1OWtA.X1RxZ5L0KPvSoea2CjVEZxHiqd0'
+TOKEN = 'TOKEN'
 version = '0.1.0'
 
 
@@ -81,7 +81,7 @@ async def on_ready():
 async def change_presece():
     await client.wait_until_ready()
 
-    statuses = ['Pai tá on B) \n Wick19#5864', 'Use /liberar_dm, no: #comandos-do-bot para liberar a DM.','Use /help | LIFBOT \n Wick19#5864', 'Use /help | LIFBOT \n Wick19#5864']
+    statuses = ['Pai tá on B) \n RickDB17', 'Use /liberar_dm, no: #comandos-do-bot para liberar a DM.','Use /help | LIFBOT \n ', 'Use /help | LIFBOT \n RickDB17']
 
     while not client.is_closed():
         status = random.choice(statuses)
